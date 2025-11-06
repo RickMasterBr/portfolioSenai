@@ -1,21 +1,6 @@
-@media (max-width: 768px) {
-    .divisao {
-        font-size: 24px;
-        padding: 30px 15px;
-    }
+:root{
+    --roxo:#5841bf;
 
-    .textDivisao {
-        word-spacing: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .divisao {
-        font-size: 18px;
-    }
-    .textDivisao {
-        word-spacing: 8px;
-    }
 }
 
 *{
@@ -108,9 +93,12 @@ main{
     font-size: 72px;
 }
 
-#txtJenny{
-    color: purple;
-    text-decoration: underline;
+.letraRoxa{
+    color: var(--roxo);
+}
+
+u{
+    color: var(--roxo);
 }
 
 .buttons{
@@ -165,7 +153,47 @@ main{
 
 #services{
     min-height: 100vh;
-    padding: 80px 40px;
     background-color: #5840ba;
-    
+}
+
+#testimonials{
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 6em 1rem;
+}
+
+.testimonials-card{
+    background-color: #f6f6f6;
+    display: flex;
+    gap: 3em;
+    padding: 2em 6em;
+}
+
+.testimonials-card-text{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 1em;
+    text-align: left;
+    color: #5f5f5f;
+    font-size: 24px;
+}
+
+.testimonials-image{
+    background-color: white;
+    padding: 0.5em;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#ceo{
+    height: 430px;
+    width: auto;
+    padding: 0.5em 1em;
+    filter: grayscale(100);
+    transform: translateX(5%);
 }
