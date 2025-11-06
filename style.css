@@ -1,0 +1,171 @@
+@media (max-width: 768px) {
+    .divisao {
+        font-size: 24px;
+        padding: 30px 15px;
+    }
+
+    .textDivisao {
+        word-spacing: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .divisao {
+        font-size: 18px;
+    }
+    .textDivisao {
+        word-spacing: 8px;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f8f8f8;
+    background-image:
+        linear-gradient(to right,  rgba(224, 224, 224, 0.3) 2px, transparent 1px),
+        linear-gradient(to bottom, rgba(224, 224, 224, 0.3) 2px, transparent 1px); 
+     background-size: 200px 200px;
+}   
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 7;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.menu{
+    display: flex;
+    gap: 40px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: darkslategray;
+}
+
+.menu a:hover{
+    color: blueviolet;
+    text-decoration: underline blueviolet;
+}
+
+#logo{
+    height: 50px;
+    width: auto;
+}
+
+main{
+    min-height: 95vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-content{
+    position: absolute;
+    bottom: 68vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1;
+}
+
+#mulher{
+    position: absolute;
+    bottom: 0;
+    height: 70vh;
+    max-height: 630px;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: grayscale(100);
+    z-index: 0;
+}
+
+.main-content p{
+    font-size: 20px;
+}
+
+.main-content h1{
+    font-size: 72px;
+}
+
+#txtJenny{
+    color: purple;
+    text-decoration: underline;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 5px;
+    border-radius: 40px;
+}
+
+.btn{
+    background-color: transparent;
+    padding: 15px 40px;
+    border-radius: 40px;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+
+#portfolio{
+    background-color: blueviolet;
+    border: none;
+    color: white;
+}
+
+#hireMe{
+    background-color: white;
+}
+
+#contact{
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.divisao{
+    min-height: 10vh;
+    background-color: #a4db74;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.textDivisao{
+    word-spacing: 20px;
+}
+
+#services{
+    min-height: 100vh;
+    padding: 80px 40px;
+    background-color: #5840ba;
+    
+}
